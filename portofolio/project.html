@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Mateen Ahmad</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="project.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">MA</div>
+  <input type="checkbox" id="nav-toggle">
+  <label class="nav-toggle-label" for="nav-toggle">
+    <span></span><span></span><span></span>
+  </label>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="videoDemo.html">Demo</a></li>
+    <li><a href="report.html">Report</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <div class="binary-bg" aria-hidden="true"></div>
+  <span class="section-label">My Work</span>
+  <h1>Projects</h1>
+  <p>A selection of things I've built — real code, real ideas.</p>
+</header>
+
+<section class="projects-section">
+  <div class="featured-project">
+    <div class="feat-badge">Featured Project</div>
+    <div class="feat-grid">
+      <div class="feat-info">
+        <div class="proj-lang"><i class="fa-brands fa-python"></i> Python</div>
+        <h2>Book Ordering System</h2>
+        <p>A fully functional command-line book ordering system built in Python. Users can browse a catalogue of books, add items to a cart, apply discounts, manage their orders and view order history — all through an intuitive terminal interface.</p>
+        <ul class="feat-features">
+          <li><i class="fa-solid fa-check"></i> Browse &amp; search book catalogue</li>
+          <li><i class="fa-solid fa-check"></i> Add / remove books from cart</li>
+          <li><i class="fa-solid fa-check"></i> Discount code system</li>
+          <li><i class="fa-solid fa-check"></i> Order confirmation &amp; history</li>
+          <li><i class="fa-solid fa-check"></i> File I/O for persistent storage</li>
+        </ul>
+        <div class="proj-tags">
+          <span>Python</span><span>OOP</span><span>File I/O</span><span>CLI</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/mateenahmad0971-blip" target="_blank" class="btn-primary"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+      </div>
+      <div class="feat-preview">
+        <div class="code-window">
+          <div class="code-bar">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+            <span class="code-title">book_system.py</span>
+          </div>
+          <pre class="code-body">
+<span class="kw">class</span> <span class="cls">Book</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+
+<span class="kw">class</span> <span class="cls">Cart</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.items = []
+
+    <span class="kw">def</span> <span class="fn">add_book</span>(self, book):
+        self.items.append(book)
+        <span class="fn">print</span>(<span class="str">f"Added: {book.title}"</span>)
+
+    <span class="kw">def</span> <span class="fn">total</span>(self):
+        <span class="kw">return</span> <span class="fn">sum</span>(b.price <span class="kw">for</span> b <span class="kw">in</span> self.items)
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="other-title">Other Projects</h2>
+  <div class="projects-grid">
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <i class="fa-brands fa-html5 proj-icon"></i>
+        <div class="proj-lang"><i class="fa-brands fa-html5"></i> HTML / CSS</div>
+      </div>
+      <h3>Portfolio Website</h3>
+      <p>This very portfolio site — built from scratch with pure HTML and CSS, fully responsive with a hamburger menu and CSS grid layouts.</p>
+      <div class="proj-tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
+      <a href="https://github.com/mateenahmad0971-blip" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <i class="fa-solid fa-calculator proj-icon"></i>
+        <div class="proj-lang"><i class="fa-brands fa-python"></i> Python</div>
+      </div>
+      <h3>Grade Calculator</h3>
+      <p>A Python tool for computing weighted module grades, with GPA prediction and feedback on areas for improvement.</p>
+      <div class="proj-tags"><span>Python</span><span>Logic</span><span>CLI</span></div>
+      <a href="https://github.com/mateenahmad0971-blip" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <i class="fa-solid fa-list-check proj-icon"></i>
+        <div class="proj-lang"><i class="fa-brands fa-js"></i> JavaScript</div>
+      </div>
+      <h3>To-Do App</h3>
+      <p>A lightweight browser-based to-do list with local storage, task categories, and a clean minimal interface.</p>
+      <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      <a href="https://github.com/mateenahmad0971-blip" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+
+    <div class="proj-card placeholder-card">
+      <div class="proj-card-top">
+        <i class="fa-solid fa-hourglass-half proj-icon"></i>
+      </div>
+      <h3>Coming Soon</h3>
+      <p>More projects from Term 2 modules will be added here as they are completed.</p>
+      <div class="proj-tags"><span>TBC</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mateen Ahmad</p>
+  <div class="footer-links">
+    <a href="mailto:mateenahmad0971@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/mateenahmad0971-blip" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
