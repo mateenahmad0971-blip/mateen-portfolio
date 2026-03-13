@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report | Mateen Ahmad</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="report.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">MA</div>
+  <input type="checkbox" id="nav-toggle">
+  <label class="nav-toggle-label" for="nav-toggle">
+    <span></span><span></span><span></span>
+  </label>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="videoDemo.html">Demo</a></li>
+    <li><a href="report.html" class="active">Report</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <div class="binary-bg" aria-hidden="true"></div>
+  <span class="section-label">Reflection</span>
+  <h1>Site Report</h1>
+  <p>A reflective account of my web development journey this term.</p>
+</header>
+
+<section class="report-section">
+  <div class="report-body">
+
+    <article class="report-block">
+      <h2>Introduction</h2>
+      <p>This report documents my experience developing a portfolio website as part of the CSY1063 Web Development module at the University of Northampton. Over the course of this term, I have learned to design, code and deploy a multi-page responsive website using HTML5 and CSS3. This has been both a challenging and deeply rewarding process, and I want to capture the highs and lows honestly.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Getting Started — Early Weeks</h2>
+      <p>When I first started, I had very little experience with HTML and almost none with CSS. Writing my first index.html felt daunting — I kept second-guessing every tag and wondering if I was doing things correctly. The biggest early hurdle was understanding the difference between block and inline elements, and why my divs kept behaving unexpectedly.</p>
+      <p>One of my first wins was getting the navigation bar to look the way I imagined it. I used a semantic nav element with an unordered list inside, and styled it with Flexbox. Seeing it snap into place was a genuinely satisfying moment that motivated me to keep going.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Design Decisions</h2>
+      <p>I deliberately chose a dark theme for the portfolio, using a near-black background (#0d0f14) with a bright cyan-green accent (#39ff8f). I wanted the site to feel technical and modern — something that reflected a developer's identity rather than a generic template aesthetic.</p>
+      <p>For typography, I selected Syne for headings (a geometric display font that feels bold and distinctive) and DM Mono for code snippets and labels, giving the site a programming feel. I found both fonts through Google Fonts after experimenting with several combinations. I was inspired by minimalist developer portfolios I found on Dribbble and Awwwards, particularly their use of generous negative space and strong type hierarchies.</p>
+      <p>The binary-number background pattern was a deliberate choice to reinforce the computer science theme without being distracting — it's subtle and low-opacity, acting as texture rather than noise.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Technical Development</h2>
+      <p>Learning CSS Grid was one of the most important technical steps I took. I initially tried to build layouts with Flexbox alone but quickly realised Grid offered far more control for two-dimensional layouts. The projects page uses a masonry-style grid, which is different from the single-column layout on the home and report pages, demonstrating grid versatility.</p>
+      <p>Making the site responsive was the most time-consuming part. I created separate CSS stylesheets for each page's unique layout, alongside a shared base.css for the navigation, footer, and common utility styles. Media queries handle screens below 768px. The most complex challenge was the hamburger menu — I used a button element and toggled a CSS class with a small JavaScript event listener. Getting the animation smooth and the menu overlay working correctly took several iterations.</p>
+      <p>I used CSS custom properties (variables) throughout base.css for colours and spacing, which made maintaining consistency across five pages much easier. Changing the accent colour everywhere was a single-line edit.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Ups and Downs</h2>
+      <p>There were moments of real frustration. At one point my whole layout broke after I accidentally applied a conflicting style rule, and it took me over an hour to track down the issue using browser developer tools. That experience taught me to use DevTools far more actively for debugging.</p>
+      <p>On the positive side, completing the contact form (using a mailto: action) and seeing it open my email client for the first time was a small but real milestone. The code validation stage was also satisfying — running all files through the W3C validator and watching them pass gave a sense of completeness.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Reflections and Improvements</h2>
+      <p>Looking back, I would have started using GitHub commits much earlier. In the beginning I only saved files locally and didn't commit until I had built several pages. I now understand why regular, meaningful commits matter — they act as a safety net and document the story of a project's development.</p>
+      <p>If I were to improve the site further, I would add JavaScript-driven animations for page transitions, implement a dark/light mode toggle, and replace the mailto form with a proper server-side solution using PHP or a form service like Formspree. I would also explore adding a blog section to document ongoing learning.</p>
+      <p>Overall, this module has given me a solid foundation in front-end web development. I leave it with skills I can genuinely apply and build on throughout my degree and beyond.</p>
+    </article>
+
+    <article class="report-block">
+      <h2>Video Demonstration</h2>
+      <p>The video demonstration for this assignment can be found on the <a href="videoDemo.html">Demo page</a> of this website.</p>
+      <p>Direct URL: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>
+    </article>
+
+    <article class="report-block">
+      <h2>Validation Screenshots</h2>
+      <p>Below are the validation screenshots for each website file (HTML and CSS). All files are valid and contain no errors.</p>
+      <div class="validation-grid">
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>index.html</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>project.html</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>contact.html</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>videoDemo.html</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>report.html</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>base.css</span></div>
+        <div class="val-card"><div class="val-img-placeholder"><i class="fa-solid fa-circle-check"></i></div><span>index.css</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mateen Ahmad</p>
+  <div class="footer-links">
+    <a href="mailto:mateenahmad0971@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/mateenahmad0971-blip" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
